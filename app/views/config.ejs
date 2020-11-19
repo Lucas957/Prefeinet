@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <title>PrefeiNet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="compiler/style2.css">
+    <link rel="stylesheet" href="compiler/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-warning">
+
+      <div class="container" >
+
+        <a class="navbar-brand" href="main">PrefeiNet</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite" >
+
+          <span class="navbar-toggler-icon" ></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite" >
+
+          <ul class="navbar-nav mr-auto" >
+
+            <li class="nav-item">
+
+              <a class="nav-link" href="main">inicio</a>
+              
+            </li>
+        
+            <li class="nav-item">
+
+              <a class="nav-link" href="config">configurações</a>
+              
+            </li>
+
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                social
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+                <a class="dropdown-item" href="#">Reddit</a>
+              </div>
+            </li>
+
+          </ul>
+          
+        </div>
+      </div>  
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
+          </div>
+          <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+              
+              <div class="heading mb-4">
+                <h4>Configurações</h4>
+                <h6 style="color: white;">Mudar informações</h6>
+
+              </div>
+              <form action="/login" method="POST">
+                <div class="form-input">
+                  <span><i class="fa fa-user-circle-o"></i></span>
+                  <input name="email" type="email" placeholder="Nome" required id="login">
+                </div>
+    
+                <div class="form-input">
+                    <span><i class="fa fa-lock"></i></span>
+                    <input name="senha" type="password" placeholder="Senha" required id="senha">
+                </div>
+
+                <div class="form-input">
+                    <span><i class="fa fa-location-arrow"></i></span>
+                    <input name="senha" type="password" placeholder="Bairro" required id="senha">
+                  </div>
+
+                  <div class="text-left mb-3">
+                    <button type="submit" class="btn" id="logar" >Alterar</button>
+                  </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+   
+
+    <script src="jquery/dist/jquery.slim.min.js"></script>
+    <script src="popper.js/dist/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compiler/style2.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Esqueci minha senha</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
+          </div>
+          <div class="col-lg-6 col-md-6 form-container">
+            <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box ">
+              <div class="logo mb-3">
+                <img src="/imgs/logoPrefeiNet2.png" width="150px">
+              </div>
+              <div class="reset-form d-block">
+
+                <form action="/" class="reset-password-form">
+
+                    <h4 class="mb-3"> Reset sua senha</h4>
+                    <p class="mb-4 text-white">insira seu e-mail cadastrado</p>
+                    <div class="form-input">
+                        <span><i class="fa fa-envelope"></i></span>
+                        <input type="email" placeholder="Endereço de e-mail" required name="emailEsq">
+                    </div>
+                    <div class="mb-3">
+                        <button class="btn" type="submit">Enviar email</button>
+                    </div>
+
+                </form>
+              </div>
+                <div class="reset-confirmation d-none">
+
+                    <div class="mb-4">
+
+                        <h4 class="mb-3">Um link foi enviado para seu e-mail!</h4>
+                        <h6>check seu e-email</h6>
+
+                    </div>
+
+                    <div>
+
+                        <a href="index">
+                            <button type="submit" class="btn">faça login</button>
+                        </a>
+
+                    </div>
+
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    <!-- <script src="login.js"></script> -->
+    <script src="jquery/dist/jquery.slim.min.js"></script>
+    <script src="popper.js/dist/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        function PasswordReset(){
+            $('.form.reset-password-form').on('submit', function(e){
+                e.preventDefault();
+                $('.reset-form').removeClass('d-block').addClass('d-none');
+                $('.reset-confimation').addClass('d-block');
+            });
+        }
+        
+        window.addEventListener('load', function(){
+            PasswordReset();
+        })
+
+    </script>
+</body>
+</html>
